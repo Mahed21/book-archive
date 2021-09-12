@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input field -->
+    <div class="background-image">
+        <h3 class="text-center pt-5" style="color: #26a65b;">Book Archieve</h3>
+
+    <!-- input field -->
+       <div class="input-group mb-3 w-50 mx-auto mt-5 pb-3">
+        <input id="input-field" type="text" class="form-control input-area" placeholder="Enter A Book Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchFieldArea()"  type="button" id="button-addon2">Send</button>
+       </div>
+    </div>
+    <!-- sppiner -->
+    <div class="d-flex justify-content-center">
+    <div id="spinner-field" class="spinner-grow text-primary spinner-area" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+   </div>  
+
+    <!-- warning message -->
+    <h5 id="warning" class="text-center"></h5>
+
+    <!-- this paragraph print total number search Field -->
+    <h6 id="number-of-search" class="text-center"></h6>
+    
+
+    <!-- card -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 ps-3 pe-3 mt-3 mb-3" id="parent-class-card">
+      
+    </div>
+
+  
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="api.js"></script>
+</body>
+</html>
